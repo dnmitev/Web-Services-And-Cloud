@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentsSystem", "StudentsSystem", "{6C7F2E94-6BE6-4EC9-99D4-8248B2CC7A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSystem.Models", "StudentSystem.Models\StudentSystem.Models.csproj", "{9EE15213-A944-4C8B-9A07-2E1EFFA7EB65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSystem.Data", "StudentSystem.Data\StudentSystem.Data.csproj", "{5BFA7C71-B3E9-4B08-935E-8F6F321B1560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsSystem.Services", "StudentsSystem.Services\StudentsSystem.Services.csproj", "{3F780CFC-2CCF-48C5-825F-424122A60B69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MusicSystem", "MusicSystem", "{72E72432-6336-42A4-B5C3-7C313C850333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSystem.Models", "MusicSystem.Models\MusicSystem.Models.csproj", "{E99EDCA4-558C-455A-B934-2737BB85837C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSystem.Data", "MusicSystem.Data\MusicSystem.Data.csproj", "{053353FC-C15C-444F-A997-D8DACBF760ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSystem.Services", "MusicSystem.Services\MusicSystem.Services.csproj", "{3057E50B-680A-4132-9DBD-26E4CC8C0B51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EE15213-A944-4C8B-9A07-2E1EFFA7EB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE15213-A944-4C8B-9A07-2E1EFFA7EB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE15213-A944-4C8B-9A07-2E1EFFA7EB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE15213-A944-4C8B-9A07-2E1EFFA7EB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFA7C71-B3E9-4B08-935E-8F6F321B1560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFA7C71-B3E9-4B08-935E-8F6F321B1560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFA7C71-B3E9-4B08-935E-8F6F321B1560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFA7C71-B3E9-4B08-935E-8F6F321B1560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F780CFC-2CCF-48C5-825F-424122A60B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F780CFC-2CCF-48C5-825F-424122A60B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F780CFC-2CCF-48C5-825F-424122A60B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F780CFC-2CCF-48C5-825F-424122A60B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99EDCA4-558C-455A-B934-2737BB85837C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99EDCA4-558C-455A-B934-2737BB85837C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99EDCA4-558C-455A-B934-2737BB85837C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99EDCA4-558C-455A-B934-2737BB85837C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053353FC-C15C-444F-A997-D8DACBF760ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053353FC-C15C-444F-A997-D8DACBF760ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053353FC-C15C-444F-A997-D8DACBF760ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053353FC-C15C-444F-A997-D8DACBF760ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3057E50B-680A-4132-9DBD-26E4CC8C0B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3057E50B-680A-4132-9DBD-26E4CC8C0B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3057E50B-680A-4132-9DBD-26E4CC8C0B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3057E50B-680A-4132-9DBD-26E4CC8C0B51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9EE15213-A944-4C8B-9A07-2E1EFFA7EB65} = {6C7F2E94-6BE6-4EC9-99D4-8248B2CC7A7E}
+		{5BFA7C71-B3E9-4B08-935E-8F6F321B1560} = {6C7F2E94-6BE6-4EC9-99D4-8248B2CC7A7E}
+		{3F780CFC-2CCF-48C5-825F-424122A60B69} = {6C7F2E94-6BE6-4EC9-99D4-8248B2CC7A7E}
+		{E99EDCA4-558C-455A-B934-2737BB85837C} = {72E72432-6336-42A4-B5C3-7C313C850333}
+		{053353FC-C15C-444F-A997-D8DACBF760ED} = {72E72432-6336-42A4-B5C3-7C313C850333}
+		{3057E50B-680A-4132-9DBD-26E4CC8C0B51} = {72E72432-6336-42A4-B5C3-7C313C850333}
+	EndGlobalSection
+EndGlobal
