@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayOfWeekService", "DayOfWeekService\DayOfWeekService.csproj", "{9696E08D-5610-4C7D-BA91-1077D977613E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayOfWeekConsumer", "DayOfWeekConsumer\DayOfWeekConsumer.csproj", "{83B3E31F-E1F0-4671-B95C-831E1FCEED83}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9696E08D-5610-4C7D-BA91-1077D977613E} = {9696E08D-5610-4C7D-BA91-1077D977613E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubstringOccuranceCounter", "SubstringOccuranceCounter\SubstringOccuranceCounter.csproj", "{88FAC07C-7924-4807-A52A-8C1F0BAF7E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubstringCounter", "SubstringCounter\SubstringCounter.csproj", "{FADEA163-A8F5-4520-B454-3AC8EFA5B8B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubstringCounterClient", "SubstringCounterClient\SubstringCounterClient.csproj", "{5C89A195-91EE-4E73-AF30-16DA156C4EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9696E08D-5610-4C7D-BA91-1077D977613E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9696E08D-5610-4C7D-BA91-1077D977613E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9696E08D-5610-4C7D-BA91-1077D977613E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9696E08D-5610-4C7D-BA91-1077D977613E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B3E31F-E1F0-4671-B95C-831E1FCEED83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B3E31F-E1F0-4671-B95C-831E1FCEED83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B3E31F-E1F0-4671-B95C-831E1FCEED83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B3E31F-E1F0-4671-B95C-831E1FCEED83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88FAC07C-7924-4807-A52A-8C1F0BAF7E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FAC07C-7924-4807-A52A-8C1F0BAF7E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FAC07C-7924-4807-A52A-8C1F0BAF7E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FAC07C-7924-4807-A52A-8C1F0BAF7E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADEA163-A8F5-4520-B454-3AC8EFA5B8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADEA163-A8F5-4520-B454-3AC8EFA5B8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADEA163-A8F5-4520-B454-3AC8EFA5B8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADEA163-A8F5-4520-B454-3AC8EFA5B8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C89A195-91EE-4E73-AF30-16DA156C4EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C89A195-91EE-4E73-AF30-16DA156C4EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C89A195-91EE-4E73-AF30-16DA156C4EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C89A195-91EE-4E73-AF30-16DA156C4EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLogger.Models", "BugLogger.Models\BugLogger.Models.csproj", "{4FBE6981-5F63-4197-A225-791287AEE528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLogger.Data", "BugLogger.Data\BugLogger.Data.csproj", "{9308EFF2-3FEC-48E6-AB82-45B5D2232665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLogger.Services", "BugLogger.Services\BugLogger.Services.csproj", "{0EDE6CEB-77F6-4B84-825C-B65B90BAA353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLogger.Data.Tests", "BugLogger.Data.Tests\BugLogger.Data.Tests.csproj", "{C171E1F3-0623-4DED-AC5C-CB0332B4FCB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLogger.Services.Tests", "BugLogger.Services.Tests\BugLogger.Services.Tests.csproj", "{F476AC14-0A10-4D47-AAE3-684A2B8DE23C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLogger.Services.IntergrationTests", "BugLogger.Services.IntergrationTests\BugLogger.Services.IntergrationTests.csproj", "{27E8A8DB-40A2-4C79-9DCE-774F3F8CCF55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{82CFC22D-F7F1-4B5D-955F-67E80174F5E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FBE6981-5F63-4197-A225-791287AEE528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBE6981-5F63-4197-A225-791287AEE528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBE6981-5F63-4197-A225-791287AEE528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBE6981-5F63-4197-A225-791287AEE528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9308EFF2-3FEC-48E6-AB82-45B5D2232665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9308EFF2-3FEC-48E6-AB82-45B5D2232665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9308EFF2-3FEC-48E6-AB82-45B5D2232665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9308EFF2-3FEC-48E6-AB82-45B5D2232665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EDE6CEB-77F6-4B84-825C-B65B90BAA353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDE6CEB-77F6-4B84-825C-B65B90BAA353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDE6CEB-77F6-4B84-825C-B65B90BAA353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDE6CEB-77F6-4B84-825C-B65B90BAA353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C171E1F3-0623-4DED-AC5C-CB0332B4FCB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C171E1F3-0623-4DED-AC5C-CB0332B4FCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C171E1F3-0623-4DED-AC5C-CB0332B4FCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C171E1F3-0623-4DED-AC5C-CB0332B4FCB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F476AC14-0A10-4D47-AAE3-684A2B8DE23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F476AC14-0A10-4D47-AAE3-684A2B8DE23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F476AC14-0A10-4D47-AAE3-684A2B8DE23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F476AC14-0A10-4D47-AAE3-684A2B8DE23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E8A8DB-40A2-4C79-9DCE-774F3F8CCF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E8A8DB-40A2-4C79-9DCE-774F3F8CCF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E8A8DB-40A2-4C79-9DCE-774F3F8CCF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E8A8DB-40A2-4C79-9DCE-774F3F8CCF55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C171E1F3-0623-4DED-AC5C-CB0332B4FCB5} = {82CFC22D-F7F1-4B5D-955F-67E80174F5E2}
+		{F476AC14-0A10-4D47-AAE3-684A2B8DE23C} = {82CFC22D-F7F1-4B5D-955F-67E80174F5E2}
+		{27E8A8DB-40A2-4C79-9DCE-774F3F8CCF55} = {82CFC22D-F7F1-4B5D-955F-67E80174F5E2}
+	EndGlobalSection
+EndGlobal
