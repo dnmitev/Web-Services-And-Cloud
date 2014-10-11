@@ -36,8 +36,7 @@ namespace App.Services
             PublicClientId = "self";
             OAuthOptions = new OAuthAuthorizationServerOptions
             {
-                // TODO: set token endpoint
-                TokenEndpointPath = new PathString("/Token"),
+                TokenEndpointPath = new PathString("/api/users/login"),
                 Provider = new ApplicationOAuthProvider(PublicClientId),
                 AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(14),

@@ -10,6 +10,7 @@
         public void TestMethod1()
         {
             // TODO: Write integrations tests, if needed
+            // Not enough time - sorry :)
         }
     }
 }

@@ -28,16 +28,38 @@
             this.repositories = new Dictionary<Type, object>();
         }
 
-        public IGenericRepository<ApplicationUser> Users
+        public IGenericRepository<User> Users
         {
             get
             {
-                return this.GetRepository<ApplicationUser>();
+                return this.GetRepository<User>();
             }
         }
 
-        // TODO: public IGenericRepository<Models> Models
+        public IGenericRepository<Game> Games
+        {
+            get
+            {
+                return this.GetRepository<Game>();
+            }
+        }
 
+        public IGenericRepository<Guess> Guesses
+        {
+            get
+            {
+                return this.GetRepository<Guess>();
+            }
+        }
+
+        public IGenericRepository<Notification> Notifications
+        {
+            get
+            {
+                return this.GetRepository<Notification>();
+            }
+        }
+        
         public void SaveChanges()
         {
             this.context.SaveChanges();

@@ -1,0 +1,64 @@
+Projects
+	-> Models
+	-> Data
+		-> UoW, Repositories
+	-> Services
+		-> Individual User Accounts
+	-> Wcf Service Application
+
+Models
+	-> install packages Entity.Identity
+	-> Model for the user
+		-> cut the method from the services
+		-> Model classes for code first	
+		
+Data
+	-> add references to models and EF
+	-> cut the ApplicationDbContext from the Services
+		-> Add IDbSet<Model> in the DbContext.cs
+	-> Enable-migrations
+		-> this.AutomaticMigrationsEnabled = true;
+		-> this.AutomaticDatalossMigrationsAllowed = true;
+	-> Create Repository
+		-> IRepository<T> whete T : class
+			-> IQueryable<T> All;
+			-> void Add(T Entity);
+			-> void Update(T Entity);
+			-> void Delete(T Entity);
+			-> void Delete(object id);
+			-> T Find(object id);
+			-> void SaveChanges();
+		-> Repository<T> : IRepository<T>
+			-> DbContext context
+			-> IDbSet<T> set
+			-> set context and set in the constructor
+			-> private void ChangeState(T Entity, EnitityState state);
+	-> Create UoW
+		-> register repos in a dictionary - lazy loading
+		-> make repos as a properties
+		
+BaseController
+	-> BaseController : ApiController
+	-> put UoW in the constructor for testing purpose
+
+IoC
+	-> Ninject.Web.WebApi OWIN
+		-> Startup.cs
+			app.UseNinjectMiddleWare....
+			CreateKernel
+			RegisterMappings
+			
+CORS
+	-> nuget -> cors webapi2
+		-> webapiconfig.cs	
+			config.EnableCors(new EnableCorsAttribute("*","*","*"));
+			
+		-> global.asax
+			protected void Application_BeginRequest(object sender, EventArgs e)
+			{
+				Response.Headers.Add("Access-Control-Allow-Origin", "*");
+			}
+Routing
+	-> route -> name: "Users"
+				route: "api/Users/{controller}"
+			

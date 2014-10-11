@@ -7,9 +7,13 @@
 
     public interface IAppData
     {
-        IGenericRepository<ApplicationUser> Users { get; }
+        IGenericRepository<User> Users { get; }
 
-        // TODO: IGenericRepository<Model> Models { get; }
+        IGenericRepository<Game> Games { get; }
+
+        IGenericRepository<Guess> Guesses { get; }
+
+        IGenericRepository<Notification> Notifications { get; }
 
         void SaveChanges();
     }

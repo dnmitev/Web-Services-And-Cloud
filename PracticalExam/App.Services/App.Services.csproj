@@ -228,7 +228,19 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseApiController.cs" />
+    <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NotificationsController.cs" />
+    <Compile Include="Controllers\ScoresController.cs" />
+    <Compile Include="DataModels\CreateGameResponseDataModel.cs" />
+    <Compile Include="DataModels\GameCreateDataModel.cs" />
+    <Compile Include="DataModels\GameDetailsDataModel.cs" />
+    <Compile Include="DataModels\GetGameDataModel.cs" />
+    <Compile Include="DataModels\GuessDataModel.cs" />
+    <Compile Include="DataModels\JoinGameDataModel.cs" />
+    <Compile Include="DataModels\MakeGuessModel.cs" />
+    <Compile Include="DataModels\NotificationDataModel.cs" />
+    <Compile Include="DataModels\ScoreDataModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -297,7 +309,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DataModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -311,9 +322,17 @@
       <Project>{57cbfa33-ec57-4e56-ae2e-5ee889cf12e6}</Project>
       <Name>App.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\App.GameLogic\App.GameLogic.csproj">
+      <Project>{0896b228-9a63-45ee-9c36-9ba4b19de047}</Project>
+      <Name>App.GameLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\App.Models\App.Models.csproj">
       <Project>{9428b893-8a0a-47f1-8bcc-187430e4d0e6}</Project>
       <Name>App.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.Utilities\App.Utilities.csproj">
+      <Project>{b28c3050-9447-467d-9ac9-4a03ffdb74d3}</Project>
+      <Name>App.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

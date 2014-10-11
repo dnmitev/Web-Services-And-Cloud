@@ -11,6 +11,10 @@ using Ninject.Web.WebApi.OwinHost;
 
 using App.Data.Contracts;
 using App.Data;
+using App.GameLogic.Contracts;
+using App.GameLogic;
+using App.Utilities.Contracts;
+using App.Utilities;
 
 [assembly: OwinStartup(typeof(App.Services.Startup))]
 
@@ -21,23 +25,25 @@ namespace App.Services
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-            //app.UseNinjectMiddleware(CreateKernel).UseNinjectWebApi(GlobalConfiguration.Configuration);
+            app.UseNinjectMiddleware(CreateKernel).UseNinjectWebApi(GlobalConfiguration.Configuration);
         }
 
-        // TODO: Set IoC -> Ninject
-        //private static StandardKernel CreateKernel()
-        //{
-        //    var kernel = new StandardKernel();
-        //    kernel.Load(Assembly.GetExecutingAssembly());
+        //// TODO: Set IoC -> Ninject
+        private static StandardKernel CreateKernel()
+        {
+            var kernel = new StandardKernel();
+            kernel.Load(Assembly.GetExecutingAssembly());
 
-        //    BindTypes(kernel);
+            BindTypes(kernel);
 
-        //    return kernel;
-        //}
+            return kernel;
+        }
 
-        //private static void BindTypes(StandardKernel kernel)
-        //{
-        //    kernel.Bind<IAppData>().To<AppData>().WithConstructorArgument("context", c => new ApplicationDbContext());
-        //}
+        private static void BindTypes(StandardKernel kernel)
+        {
+            kernel.Bind<IAppData>().To<AppData>().WithConstructorArgument("context", c => new ApplicationDbContext());
+            kernel.Bind<INumberValidator>().To<NumberValidator>();
+            kernel.Bind<IBullsAndCowsCounter>().To<BullsAndCowsCounter>();
+        }
     }
 }
